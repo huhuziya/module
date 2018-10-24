@@ -2,12 +2,15 @@
 
 #### mvvm前端技术：model-view-viewmodel
 其核心是对view和viewmodel的双向数据绑定
+
+- mvc：
 ```
-mvc：
 Model 其实就是数据。
 View 用来把数据以某种方式呈现给用户。
 Controller 接收并处理来自用户的请求，并将 Model 返回给用户。
-mvvm：
+```
+- mvvm：
+```
 Model 层代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；
 View 代表UI 组件，它负责将数据模型转化成UI 展现出来
 ViewModel 是一个同步View 和 Model的对象。
