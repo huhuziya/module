@@ -79,3 +79,11 @@
     - model：封装业务逻辑相关的数据和处理方法
     - view：视图，负责数据的展示
     - controller：用于控制应用程序的流程，处理用户的行为和数据上的改变
+
+        - mvc：在controller中响应view的事件调用model的接口对数据进行操作，一旦model发生变化便通知相关视图进行更新
+
+            缺点：每个事件都流经controller，会导致模型变得臃肿
+
+            mvc中controller和view一般是一一对应的，控制器与视图之间的联系过于紧密导致controller复用性降低
+        - mvp：controller/presenter负责业务逻辑、model管理数据、view负责显示
+（           mvp是mvc的改良版）
